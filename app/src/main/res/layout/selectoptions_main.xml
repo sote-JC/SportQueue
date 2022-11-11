@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/profile"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#00ff0000"
+        android:scaleType="fitCenter"
+        android:src="@drawable/son"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nickname"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:text="Nickname"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sportTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="스포츠선택"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile" />
+
+    <TextView
+        android:id="@+id/sport"
+        android:layout_width="75dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#E8F5FF"
+        android:gravity="center"
+        android:text="스포츠"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sportTxt" />
+
+    <Spinner
+        android:id="@+id/selectSport"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sportTxt" />
+
+    <TextView
+        android:id="@+id/position"
+        android:layout_width="75dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="20dp"
+        android:background="#E8F5FF"
+        android:gravity="center"
+        android:text="포지션"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sportTxt" />
+
+    <Spinner
+        android:id="@+id/selectPosition"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="195dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sportTxt" />
+
+    <Button
+        android:id="@+id/selectDate"
+        android:layout_width="370dp"
+        android:layout_height="40dp"
+        android:text="날짜 및 시간 선택"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:background="#ffffff"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="@+id/sport"
+        app:layout_constraintTop_toBottomOf="@+id/sport" />
+
+    <EditText
+        android:id="@+id/dateTxt"
+        android:layout_width="380dp"
+        android:layout_height="110px"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/border"
+        android:hint="선택한 날짜 및 시간 표시"
+        android:enabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectDate" />
+
+
+    <Button
+        android:id="@+id/selectLoc"
+        android:layout_width="370dp"
+        android:layout_height="40dp"
+        android:text="위치 선택"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:background="#ffffff"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/sport"
+        app:layout_constraintTop_toBottomOf="@+id/dateTxt" />
+
+    <EditText
+        android:id="@+id/locTxt"
+        android:layout_width="380dp"
+        android:layout_height="110px"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/border"
+        android:hint="선택한 장소 표시"
+        android:enabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectLoc" />
+
+    <Button
+        android:id="@+id/matching"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:text="매칭"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:background="#ffffff"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/sport"
+        app:layout_constraintTop_toBottomOf="@+id/locTxt" />
+
+    <Button
+        android:id="@+id/turn"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="옵션 화면 가기"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:background="#ffffff"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="@+id/sport"
+        app:layout_constraintTop_toBottomOf="@+id/matching" />
+</androidx.constraintlayout.widget.ConstraintLayout>
