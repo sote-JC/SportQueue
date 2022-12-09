@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageButton
+    <ImageView
         android:id="@+id/profile"
         android:layout_width="370dp"
         android:layout_height="300dp"
@@ -12,18 +12,21 @@
         android:layout_marginTop="20dp"
         android:background="#00ff0000"
         android:scaleType="fitCenter"
-        android:src="@drawable/son"
+        android:src="@drawable/soccer_highlight"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
+    <TextView
         android:id="@+id/nick"
         android:layout_width="200dp"
         android:layout_height="30dp"
         android:background="@drawable/border"
-        android:layout_marginStart="100dp"
+        android:layout_marginStart="110dp"
         android:layout_marginTop="10dp"
-        android:hint="닉네임"
+        android:text="Nickname"
+        android:textColor="#000000"
+        android:textSize = "20sp"
+        android:gravity="center_horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profile" />
 

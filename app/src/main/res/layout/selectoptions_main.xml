@@ -5,23 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageButton
-        android:id="@+id/profile"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:background="#00ff0000"
-        android:scaleType="fitCenter"
-        android:src="@drawable/son"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/nickname"
         android:layout_width="110dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="120dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="45dp"
         android:background="@drawable/border"
         android:gravity="center"
@@ -41,7 +30,7 @@
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profile" />
+        app:layout_constraintTop_toBottomOf="@+id/dateTxt" />
 
     <TextView
         android:id="@+id/sport"
@@ -62,7 +51,7 @@
         android:layout_width="30dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="95dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="15dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sportTxt" />
 
@@ -85,7 +74,7 @@
         android:layout_width="30dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="195dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="15dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sportTxt" />
 
@@ -99,16 +88,17 @@
         android:background="#ffffff"
         android:layout_marginTop="40dp"
         app:layout_constraintStart_toStartOf="@+id/sport"
-        app:layout_constraintTop_toBottomOf="@+id/sport" />
+        app:layout_constraintTop_toBottomOf="@+id/nickname" />
 
-    <EditText
+    <TextView
         android:id="@+id/dateTxt"
         android:layout_width="380dp"
         android:layout_height="110px"
+        android:textSize="18sp"
+        android:gravity="center"
         android:layout_marginTop="15dp"
         android:background="@drawable/border"
         android:hint="선택한 날짜 및 시간 표시"
-        android:enabled="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/selectDate" />
@@ -124,19 +114,31 @@
         android:background="#ffffff"
         android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="@+id/sport"
-        app:layout_constraintTop_toBottomOf="@+id/dateTxt" />
+        app:layout_constraintTop_toBottomOf="@+id/sport" />
 
-    <EditText
+    <TextView
         android:id="@+id/locTxt"
         android:layout_width="380dp"
         android:layout_height="110px"
         android:layout_marginTop="15dp"
         android:background="@drawable/border"
         android:hint="선택한 장소 표시"
-        android:enabled="false"
+        android:gravity="center"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/selectLoc" />
+
+    <EditText
+        android:id="@+id/playTime"
+        android:layout_width="380dp"
+        android:layout_height="110px"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/border"
+        android:hint="원하는 플레이 시간(분 단위로 ex: 60)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locTxt" />
 
     <Button
         android:id="@+id/matching"
@@ -148,17 +150,18 @@
         android:background="#ffffff"
         android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="@+id/sport"
-        app:layout_constraintTop_toBottomOf="@+id/locTxt" />
+        app:layout_constraintTop_toBottomOf="@+id/playTime" />
 
     <Button
-        android:id="@+id/turn"
-        android:layout_width="150dp"
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:text="옵션 화면 가기"
+        android:text="이전 화면으로 돌아가기"
         android:textColor="#000000"
         android:textSize="20sp"
         android:background="#ffffff"
-        android:layout_marginTop="30dp"
-        app:layout_constraintStart_toStartOf="@+id/sport"
-        app:layout_constraintTop_toBottomOf="@+id/matching" />
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/playTime"
+        app:layout_constraintTop_toBottomOf="@+id/playTime" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

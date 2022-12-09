@@ -1,3 +1,47 @@
 <resources>
     <string name="app_name">SQ</string>
+    <string-array name="spinner_soccer">
+        <item>GK</item>
+        <item>CF</item>
+        <item>LW</item>
+        <item>RW</item>
+        <item>SS</item>
+        <item>AM</item>
+        <item>CM</item>
+        <item>DM</item>
+        <item>LWB</item>
+        <item>RWB</item>
+        <item>CB</item>
+    </string-array>
+
+    <string-array name="spinner_basketball">
+        <item>PG</item>
+        <item>SG</item>
+        <item>SF</item>
+        <item>PF</item>
+        <item>C</item>
+    </string-array>
+
+    <string-array name="spinner_volleyball">
+        <item>OPP</item>
+        <item>OH1</item>
+        <item>OH2</item>
+        <item>MB1</item>
+        <item>Setter</item>
+        <item>Libero</item>
+    </string-array>
+
+    <string-array name="spinner_badminton">
+        <item>L1</item>
+        <item>L2</item>
+        <item>R1</item>
+        <item>R2</item>
+    </string-array>
+
+    <string-array name="spinner_sport">
+        <item>축구</item>
+        <item>농구</item>
+        <item>배구</item>
+        <item>배드민턴</item>
+    </string-array>
 </resources>
